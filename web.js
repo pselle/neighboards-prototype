@@ -1,6 +1,8 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
+var pub = __dirname + '/public';
+app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
       res.render('index', { title: 'The index page!' })
