@@ -2,14 +2,39 @@ doctype 5
 html(lang="en")
   head
     title= title
-    script(type='text/javascript')
-      if (foo) {
-         bar()
-      }
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='/public/stylesheets/style.css')
   body
-    h1 Jade - node template engine
+    h1 Neighboards
+    #action-bar
+      input(value='Enter your location')
+      select(name="distance")
+        option(value="1") 1 mile
+        option(value="5") 5 miles
+        option(value="10") 10 miles
+        option(value="20") 20 miles
     #container
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
+      .block
+        A block!
+      .block
+        Another block!
+      .block
+        A block!
+      .block
+        Another block!
+      .block
+        A block!
+      .block
+        Another block!
+      .block
+        A block!
+      .block
+        Another block!
+      .block
+        A block!
+      .block
+        Another block!
+      .block
+        A block!
+      .block
+        Another block!

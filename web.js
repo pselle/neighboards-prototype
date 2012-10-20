@@ -1,7 +1,12 @@
 var express = require('express');
 
-var app = express.createServer(express.logger());
 var pub = __dirname + '/public';
+
+var app = express();
+app.use(app.router);
+app.use(express.static(pub));
+app.use(express.errorHandler());
+
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
