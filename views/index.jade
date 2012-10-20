@@ -1,33 +1,14 @@
-h1 Neighboards
 #action-bar
-  input(value='Enter your location')
+  input(placeholder='Enter your location', size='40')
   select(name="distance")
     option(value="1") 1 mile
     option(value="5") 5 miles
     option(value="10") 10 miles
     option(value="20") 20 miles
 #container
-  .block
-    A block!
-  .block
-    Another block!
-  .block
-    A block!
-  .block
-    Another block!
-  .block
-    A block!
-  .block
-    Another block!
-  .block
-    A block!
-  .block
-    Another block!
-  .block
-    A block!
-  .block
-    Another block!
-  .block
-    A block!
-  .block
-    Another block!
+  h1.logo NeighBoards
+  - for (var i=0; i<20; i++)
+    .block
+      h1.block-title Block title
+      h2.block-tags tag, tag, tag
+      p.block-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
