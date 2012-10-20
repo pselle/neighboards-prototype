@@ -2,10 +2,8 @@ var express = require('express');
 
 var pub = __dirname + '/public';
 
-var app = express();
-app.use(app.router);
+var app = express.createServer(express.logger());
 app.use(express.static(pub));
-app.use(express.errorHandler());
 
 app.set('view engine', 'jade');
 
