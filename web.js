@@ -2,12 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//app.engine('.html', require('ejs').__express);
-
-//app.set('view engine', 'html');
-
-app.get('/', function(request, response) {
-      response.send('Hello World!');
+app.get('/', function(req, res) {
+      res.render('index', { title: 'The index page!' })
 });
 
 var port = process.env.PORT || 5000;
