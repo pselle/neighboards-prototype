@@ -56,6 +56,10 @@ body {
   font-family: Myriad Pro, Arial, sans-serif;
 }
 
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 #action-bar {
   position: fixed;
   top: 0;
@@ -85,7 +89,7 @@ body {
 .block {
   display: inline-block;
   padding: 10px;
-  width: 250px;
+  width: 220px;
 }
   .block-title {
     font-size: 1.4em;
