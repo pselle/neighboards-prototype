@@ -115,6 +115,17 @@ a:hover {
 
   }
 
+.delete-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #1e1e1e;
+  display: none;
+}
+
 #footer {
   background: #ccc;
   margin-top: 10px;
