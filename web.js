@@ -5,7 +5,7 @@ var pub = __dirname + '/public';
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
-      res.render('index', { title: 'The index page!' })
+      res.render('index.jade', { title: 'The index page!' })
 });
 
 var port = process.env.PORT || 5000;
