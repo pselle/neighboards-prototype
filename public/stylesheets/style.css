@@ -47,9 +47,16 @@ table {
   border-spacing: 0;
 }
 
+/* OO styles */
+
+.unit {
+  float: left;
+}
+.unitRight {
+  float: right;
+}
+
 /* Site styles */
-
-
 
 body {
   font-size: 100%;
@@ -116,7 +123,7 @@ a:hover {
 
   }
 
-.delete-modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
