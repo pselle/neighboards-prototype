@@ -12,6 +12,10 @@ app.get('/', function(req, res) {
       res.render('index.jade', { title: 'Neighboards' })
 });
 
+app.get('/logged-in', function(req, res) {
+      res.render('logged_in.jade', { title: 'Neighboards' })
+});
+
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
       console.log("Listening on " + port);
