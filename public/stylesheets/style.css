@@ -106,15 +106,26 @@ a:hover {
   #action-bar select {
     font-size: 1em;
   }
+
 #container {
   margin-top: 50px;
 }
 
+/* Header area */
 .logo {
   font-size: 2em;
   font-family: 'Montserrat Alternates', sans-serif;
   padding: 10px 0 15px 50px;
 }
+
+.account-area {
+  margin: 10px 15px;
+}
+  .account-area > .signup,
+  .account-area > .login {
+    float: left;
+    padding-right: 10px;
+  }
 
 .block {
   display: inline-block;
@@ -138,6 +149,9 @@ a:hover {
   .block-content {
 
   }
+#block-modal {
+  width: 400px;
+}
 
 .modal {
   position: absolute;
@@ -149,6 +163,15 @@ a:hover {
   border: 1px solid #1e1e1e;
   display: none;
 }
+  .modal > .title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .modal > .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 
 #footer {
   background: #ccc;
