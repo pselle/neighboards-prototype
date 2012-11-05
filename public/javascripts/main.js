@@ -7,7 +7,13 @@ $('.signup').click(function() {
 });
 
 $('.block .delete').click(function() {
+  var $that = $(this).parent('.block');
+  $that.fadeOut();
   Modal.show('#delete-modal');
+  $('a.undo').click(function() {
+    $that.fadeIn();
+    Modal.hide('#delete-modal');
+  });
 });
 
 $('.block-title').click(function() {

@@ -11,6 +11,8 @@ Modal.show = function(selector) {
   });
 };
 
-Modal.hide = function($modal){
+Modal.hide = function(selector){
+  var modal = this;
+  var $modal = $(selector);
   $modal.fadeOut();
 }

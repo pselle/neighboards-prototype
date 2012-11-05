@@ -1,6 +1,7 @@
 #login-modal.modal
   .title Login
   a(href='#', class='close') Close
-  input(value='smith@gmail.com')
-  input(type='password', value='secretpassword')
-  a(href='/logged-in') Login &raquo;
+  form(method='post', action='/login')
+    input(value='smith@gmail.com', name='user')
+    input(type='password', value='secretpassword', name='password')
+    input(href='/logged-in', type='submit') Login &raquo;
