@@ -1,5 +1,9 @@
-div Preferences Page will go here.
-.link-area
-  a(href='/') Go back to the homepage (logged out)
-.link-area
-  a(href='/logged-in') Go back to the homepage (logged in)
+include action_bar
+#container
+  include header_logged_in
+  input(type='checkbox')
+  label Preference
+include delete_modal_logged_out
+include block_modal
+include login_modal
+include signup_modal
