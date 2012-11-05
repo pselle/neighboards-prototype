@@ -132,6 +132,7 @@ a:hover {
   padding: 10px;
   position: relative;
   width: 220px;
+  border-radius: 4px;
 }
   .block-title {
     font-size: 1.4em;
@@ -148,6 +149,18 @@ a:hover {
   }
   .block-content {
 
+  }
+  .green {
+    border: 1px solid green;
+  }
+  .green > .block-title > a {
+    color: green;
+  }
+  .blue {
+    border: 1px solid blue;
+  }
+  .blue >.block-title > a {
+    color: blue;
   }
 #block-modal {
   width: 400px;
