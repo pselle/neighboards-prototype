@@ -9,11 +9,26 @@ app.use("/public", express.static(__dirname + '/public'));
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
-      res.render('index.jade', { title: 'Neighboards' })
+  res.render('index.jade', { title: 'Neighboards', loggedin: globallogin })
+});
+
+app.post('/login', function(req, res) {
+  var post = req.body;
+  if (true) {
+    globallogin = true;
+    res.redirect('/');
+  } else {
+    res.send('Bad user/pass');
+  }
+});
+
+app.get('/logout', function (req, res) {
+  globallogin = false;
+  res.redirect('/');
 });
 
 app.get('/logged-in', function(req, res) {
-      res.render('logged_in.jade', { title: 'Neighboards' })
+  res.render('logged_in.jade', { title: 'Neighboards' })
 });
 
 app.get('/preferences', function(req, res) {
@@ -24,3 +39,5 @@ var port = process.env.PORT || 5000;
 app.listen(port, function() {
       console.log("Listening on " + port);
 });
+
+var globallogin = false

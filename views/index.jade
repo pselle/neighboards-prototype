@@ -1,6 +1,9 @@
 include action_bar
 #container
-  include header_logged_out
+  -if(loggedin)
+   include header_logged_in
+  -else
+    include header_logged_out
   - for (var i=0; i<10; i++)
     .block
       h1.block-title
@@ -10,9 +13,9 @@ include action_bar
       p.block-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
     .block.green
       h1.block-title
-        a(href='#') New store opening
+        a(href='#') New store opening/local happening
       a.delete X
-      h2.block-tags business, zoning, clothing stores
+      h2.block-tags new, business, zoning
       p.block-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
     .block
       h1.block-title
@@ -32,7 +35,10 @@ include action_bar
       a.delete X
       h2.block-tags tag1, tag2, tag3
       p.block-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-include delete_modal_logged_out
 include block_modal
-include login_modal
-include signup_modal
+-if(loggedin)
+  include delete_modal
+-else
+  include delete_modal_logged_out
+  include login_modal
+  include signup_modal
