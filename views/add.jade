@@ -1,0 +1,15 @@
+include action_bar
+#container
+  include header_logged_in
+  h2 Add a flyer
+  form
+    .row
+      label Short Summary of your Flyer:
+    .row
+      input(type='text', size="50")
+    .row
+      label Full description of your Flyer (including relevant links):
+    .row
+      textarea(style='width: 370px', rows='5')
+    .row
+      a.button(href='/success') Submit your flyer for review

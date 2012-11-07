@@ -27,8 +27,12 @@ app.get('/logout', function (req, res) {
   res.redirect('/');
 });
 
-app.get('/logged-in', function(req, res) {
-  res.render('logged_in.jade', { title: 'Neighboards' })
+app.get('/add-flyer', function(req, res) {
+  res.render('add.jade', { title: 'Neighboards' })
+});
+
+app.get('/success', function(req, res) {
+  res.render('thanks.jade', { title: 'Neighboards' })
 });
 
 app.get('/preferences', function(req, res) {
