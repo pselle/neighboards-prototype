@@ -5,3 +5,10 @@
     input(value='smith@gmail.com', name='user')
     input(type='password', value='secretpassword', name='password')
     input(value='Login &raquo;', type='submit')
+#signup-modal.modal
+  .title Signup
+  a(href='#', class='close') Close
+  form(method='post', action='/login')
+    input(value='smith@gmail.com')
+    input(type='password', value='secretpassword')
+    input(value='Signup &raquo;', type='submit')
