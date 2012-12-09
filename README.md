@@ -1,3 +1,5 @@
+# About
+
 Neighboards is a simple prototype built
 with Node.js, Express, Jade, jQuery, and 
 good old JavaScript.
@@ -9,14 +11,12 @@ Do whatever you like license.
 
 -- Pam Selle --
 
-*Getting Started*
+## Getting Started
 
-Run:
+Install the node modules (Express and Jade in this case):
 
-npm install
+`npm install`
 
-// installs node modules
+To run the local server, with a default port of 5000 (localhost:5000):
 
-foreman start
-
-// runs local server, default is on localhost:5000
+`foreman start`
