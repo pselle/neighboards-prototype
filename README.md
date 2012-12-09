@@ -7,6 +7,8 @@ good old JavaScript.
 This work was completed for the MOOC course
 HCI through Coursera and Stanford University.
 
+It's not perfect, but that's part of the beauty of prototyping.
+
 Do whatever you like license.
 
 -- Pam Selle --
