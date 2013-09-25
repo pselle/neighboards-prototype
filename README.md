@@ -21,4 +21,4 @@ Install the node modules (Express and Jade in this case):
 
 To run the local server, with a default port of 5000 (localhost:5000):
 
-`foreman start`
+`node  web.js`
